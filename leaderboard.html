@@ -68,79 +68,8 @@
                 <th class="px-3 md:px-6 py-4 text-center text-xs font-clashBold uppercase tracking-wider">Clan</th>
             </tr>
             </thead>
-            <tbody class="text-white font-clash font-bold text-sm bg-white divide-y divide-gray-100 uppercase">
-                <tr style="background-color: #C0DDF6;">
-                    <td class="px-3 md:px-6 py-4">1</td>
-                    <td class="px-3 md:px-6 py-4">Player1</td>
-                    <td class="px-3 md:px-6 py-4">8000</td>
-                    <td class="px-3 md:px-6 py-4">ClanA</td>
-                </tr>
-                <tr style="background-color: #2185D0;">
-                    <td class="px-3 md:px-6 py-4">2</td>
-                    <td class="px-3 md:px-6 py-4">Player2</td>
-                    <td class="px-3 md:px-6 py-4">7950</td>
-                    <td class="px-3 md:px-6 py-4">ClanB</td>
-                </tr>
-                <tr style="background-color: #C0DDF6;">
-                    <td class="px-3 md:px-6 py-4">3</td>
-                    <td class="px-3 md:px-6 py-4">Player3</td>
-                    <td class="px-3 md:px-6 py-4">7900</td>
-                    <td class="px-3 md:px-6 py-4">ClanC</td>
-                </tr>
-                <tr style="background-color: #2185D0;">
-                    <td class="px-3 md:px-6 py-4">4</td>
-                    <td class="px-3 md:px-6 py-4">Player4</td>
-                    <td class="px-3 md:px-6 py-4">7850</td>
-                    <td class="px-3 md:px-6 py-4">ClanD</td>
-                </tr>
-                <tr style="background-color: #C0DDF6;">
-                    <td class="px-3 md:px-6 py-4">5</td>
-                    <td class="px-3 md:px-6 py-4">Player5</td>
-                    <td class="px-3 md:px-6 py-4">7800</td>
-                    <td class="px-3 md:px-6 py-4">ClanE</td>
-                </tr>
-                <tr style="background-color: #2185D0;">
-                    <td class="px-3 md:px-6 py-4">6</td>
-                    <td class="px-3 md:px-6 py-4">Player6</td>
-                    <td class="px-3 md:px-6 py-4">7750</td>
-                    <td class="px-3 md:px-6 py-4">ClanF</td>
-                </tr>
-                <tr style="background-color: #C0DDF6;">
-                    <td class="px-3 md:px-6 py-4">7</td>
-                    <td class="px-3 md:px-6 py-4">Player7</td>
-                    <td class="px-3 md:px-6 py-4">7700</td>
-                    <td class="px-3 md:px-6 py-4">ClanG</td>
-                </tr>
-                <tr style="background-color: #2185D0;">
-                    <td class="px-3 md:px-6 py-4">8</td>
-                    <td class="px-3 md:px-6 py-4">Player8</td>
-                    <td class="px-3 md:px-6 py-4">7650</td>
-                    <td class="px-3 md:px-6 py-4">ClanH</td>
-                </tr>
-                <tr style="background-color: #C0DDF6;">
-                    <td class="px-3 md:px-6 py-4">9</td>
-                    <td class="px-3 md:px-6 py-4">Player9</td>
-                    <td class="px-3 md:px-6 py-4">7600</td>
-                    <td class="px-3 md:px-6 py-4">ClanI</td>
-                </tr>
-                <tr style="background-color: #2185D0;">
-                    <td class="px-3 md:px-6 py-4">10</td>
-                    <td class="px-3 md:px-6 py-4">Player10</td>
-                    <td class="px-3 md:px-6 py-4">7550</td>
-                    <td class="px-3 md:px-6 py-4">ClanJ</td>
-                </tr>
-                <tr style="background-color: #C0DDF6;">
-                    <td class="px-3 md:px-6 py-4">11</td>
-                    <td class="px-3 md:px-6 py-4">Player11</td>
-                    <td class="px-3 md:px-6 py-4">7500</td>
-                    <td class="px-3 md:px-6 py-4">ClanK</td>
-                </tr>
-                <tr style="background-color: #2185D0;">
-                    <td class="px-3 md:px-6 py-4">12</td>
-                    <td class="px-3 md:px-6 py-4">Player12</td>
-                    <td class="px-3 md:px-6 py-4">7450</td>
-                    <td class="px-3 md:px-6 py-4">ClanL</td>
-                </tr>
+            <tbody class="text-white font-clash font-bold text-sm bg-white divide-y divide-gray-100 uppercase" id="leaderboard-tbody">
+                <!-- Top 10 players will be rendered here by leaderboard.js -->
             </tbody>
         </table>
 
@@ -149,5 +78,6 @@
         <img src="images/crown-logo.png" alt="logo" class="h-10 w-10 mr-4">
         <p>Clash API</p>
     </footer>
+    <script src="leaderboard.js"></script>
 </body>
 </html>
