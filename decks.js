@@ -1,7 +1,7 @@
 // Fetch and render the top 4 decks from your FastAPI server
 async function fetchAndRenderTopDecks() {
     try {
-        const response = await fetch('http://localhost:8000/top-player-decks?limit=4');
+        const response = await fetch('https://clash-royale-backend.onrender.com/top-player-decks?limit=4');
         if (!response.ok) throw new Error('Network response was not ok');
         const data = await response.json();
         const decks = data.top_player_decks || [];
@@ -23,8 +23,6 @@ async function fetchAndRenderTopDecks() {
                     return `<img src="${card.iconUrls.medium}" alt="${card.name}" class="w-32 h-auto">`;
                 }
             }).join('');
-
-            console.log(cardImgs);
 
             // Build deck link
             const deckIds = deckInfo.deck.map(card => card.id).join(';');

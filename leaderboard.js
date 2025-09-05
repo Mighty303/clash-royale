@@ -1,7 +1,7 @@
 // Fetch and render top player leaderboard with clan icons
 async function fetchAndRenderLeaderboard() {
     try {
-        const response = await fetch('http://localhost:8000/top-players?limit=12');
+        const response = await fetch('https://clash-royale-backend.onrender.com/top-players?limit=12');
         if (!response.ok) throw new Error('Network response was not ok');
         const data = await response.json();
         const players = data.items || [];

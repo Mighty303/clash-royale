@@ -2,14 +2,14 @@
 async function fetchAndRenderDeck() {
     try {
         // Fetch deck info
-        const deckResp = await fetch('http://localhost:8000/top-player-decks?limit=1');
+        const deckResp = await fetch('https://clash-royale-backend.onrender.com/top-player-decks?limit=1');
         if (!deckResp.ok) throw new Error('Network response was not ok');
         const deckData = await deckResp.json();
         const deckInfo = deckData.top_player_decks && deckData.top_player_decks[0];
         if (!deckInfo) return;
 
         // Fetch top support card info
-        const supportResp = await fetch('http://localhost:8000/top-support-cards?limit=1');
+        const supportResp = await fetch('https://clash-royale-backend.onrender.com/top-support-cards?limit=1');
         if (!supportResp.ok) throw new Error('Network response was not ok');
         const supportData = await supportResp.json();
         const supportInfo = supportData.top_support_cards && supportData.top_support_cards[0];
